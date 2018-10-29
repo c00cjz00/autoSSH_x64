@@ -1,5 +1,6 @@
 # 請修改 config.php 內的
-# $ip="140.110.148.11"; // 台灣杉IP
+# $sshIP="clogin1.twnia.nchc.org.tw"; // or clogin2.twnia.nchc.org.tw , glogin1.twni // 台灣杉SSH IP
+# $ftpIP="xdata1.twnia.nchc.org.tw"; // or xdata2.twnia.nchc.org.tw // 台灣杉FTP IP
 # $user="c00cjz00"; //  台灣杉帳號
 # $otpKey = ''; // 台灣杉otp key, 
 # OTPKEY取得網址: https://iservice.nchc.org.tw/module_page.php?module=nchc_service#nchc_service/nchc_service.php?action=nchc_unix_account_edit
