@@ -4,6 +4,16 @@ $WinSCP=trim($argv[1]);
 $dirBin=dirname(__FILE__);
 define('MODULE_FILE', true);
 include($dirBin."/config.php");
+if (($user!="") || !isset($user) || ($otpKey=="") || !isset($otpKey) ){
+ $vbscript = sys_get_temp_dir() . 'prompt_password.vbs';
+ file_put_contents(
+  $vbscript, 'wscript.echo(InputBox("'
+  . addslashes($prompt)
+  . '", "", "Edit config.php, and type ACCOUNT and OTP key"))');
+ $command = "cscript //nologo " . escapeshellarg($vbscript);
+ $password = rtrim(shell_exec($command));	
+ exit();
+}
 if (!isset($passwd) || ($passwd=="")) {
  if ((preg_match('/^win/i', PHP_OS)) && ($vbScript=="no")){
   echo 'Enter password: '; $passwd = exec('hiddeninput.exe'); 
