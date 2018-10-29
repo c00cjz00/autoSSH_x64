@@ -1,6 +1,14 @@
 <?php
 if (!isset($argv[1])) { echo "請輸入putty.exe位置"; exit(); }
 $putty=trim($argv[1]);
+if (isset($argv[2]) && (strlen(trim($argv[2]))>10)){
+ $number=substr(trim($argv[2]),-6,6);
+ if (is_numeric($number)) {
+  $passwd=substr(trim($argv[2]),0,-6);
+ }else{
+  $passwd=trim($argv[2]);
+ }
+}
 $dirBin=dirname(__FILE__);
 define('MODULE_FILE', true);
 include($dirBin."/config.php");
