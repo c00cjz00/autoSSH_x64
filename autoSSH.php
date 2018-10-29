@@ -4,7 +4,7 @@ $putty=trim($argv[1]);
 $dirBin=dirname(__FILE__);
 define('MODULE_FILE', true);
 include($dirBin."/config.php");
-if (($user!="") || !isset($user) || ($otpKey=="") || !isset($otpKey) ){
+if (($user=="") || !isset($user) || ($otpKey=="") || !isset($otpKey) ){
  $vbscript = sys_get_temp_dir() . 'prompt_password.vbs';
  file_put_contents(
   $vbscript, 'wscript.echo(InputBox("'
