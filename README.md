@@ -4,7 +4,7 @@
 # $otpKey = ''; // 台灣杉otp key, 
 # OTPKEY取得網址: https://iservice.nchc.org.tw/module_page.php?module=nchc_service#nchc_service/nchc_service.php?action=nchc_unix_account_edit
 # 
-# 執行 
+# 雙擊兩下執行程式 
 # run_x64.bat or run_FileZilla.bat 即可自動連線
 
 # 備註
