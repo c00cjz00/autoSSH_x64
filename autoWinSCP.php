@@ -28,7 +28,7 @@ if (($passwd!="") && ($otpKey!="")){
   echo "Please wait for ".$time." secnods!\n"; 
   for($i=0;$i<=$time;$i++){ echo $i." "; sleep(1); }
  }
- $cmd=createWinSCPConnection($WinSCP,$ip,$user,$passwd,$otpKey);  passthru($cmd);
+ $cmd=createWinSCPConnection($WinSCP,$ftpIP,$user,$passwd,$otpKey);  passthru($cmd);
 }
 
 

@@ -1,7 +1,8 @@
 <?php
 ## ********* 必填 ********** ##
 ## 台灣杉IP ##
-$ip="clogin1.twnia.nchc.org.tw"; // or clogin2.twnia.nchc.org.tw , glogin1.twni
+$sshIP="clogin1.twnia.nchc.org.tw"; // or clogin2.twnia.nchc.org.tw , glogin1.twni
+$ftpIP="xdata1.twnia.nchc.org.tw"; // or xdata2.twnia.nchc.org.tw
 ## 台灣杉帳號 ##
 $user="c00cjz00"; 
 ## 台灣杉otp key ##
